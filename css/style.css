@@ -32,7 +32,7 @@
 }
 
 *{
-    margin: auto;
+    margin: 0;
 }
 
 :root{
@@ -58,6 +58,13 @@
     max-width: 1440px;
     margin: auto;
     padding: 0 15px;
+}
+
+.btnPlein{
+    padding: 9px 9px 7px;
+    background: linear-gradient(to top, #f31f5c, #fe6a00 100%);
+    border-radius: 16px;
+    color: var(--white);
 }
 
 .container1170{
@@ -195,6 +202,7 @@ footer p, footer a{
     border: 1px solid transparent;
     border-image: linear-gradient(to right, #fe6a00, #f31f5c 100%);
     border-image-slice: 1;
+    margin: auto;
 }
 
 .rotateHr p{
@@ -230,8 +238,9 @@ footer p, footer a{
 #divYourProject{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 60px;
     max-width: 816px;
-    margin-top: 108px;
+    margin: 108px auto;
 }
 
 .articleProject{
@@ -304,6 +313,7 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     background-size: cover;
     min-height: 740px;
     height: 740px;
+    margin-bottom: 80px;
 }
 
 .divPropos{
@@ -373,6 +383,7 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     border-image-slice: 1;
     width: 78px;
     margin-top: 10px;
+    height: 0;
 }
 
 .hrFreelance ul{
@@ -381,4 +392,46 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     font-size: 18px;
     font-family: var(--pRegular);
     line-height: 27px;
+}
+
+.portfoliohr{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.portfoliohr hr{
+    display: inline-block;
+    border: 1px solid var(--orange);
+    width: 102px;
+    height: 0;
+    margin: 10px 10px 10px 0;
+}
+
+.portfoliohr p{
+    color: var(--red);
+    font-size: 15px;
+    font-family: var(--pRegular);
+    text-transform: uppercase;
+}
+
+#portfolio h2{
+    font-size: 66px;
+    font-family: var(--pExtrabold);
+    color: var(--black);
+    text-transform: uppercase;
+    margin-bottom: 54px;
+}
+
+#menuPortfolio{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuPortfolio ul{
+    display: flex;
+    gap: 40px;
+    font-size: 13px;
+    color: #1E1E1E;
+    font-family: var(--pBold);
+    text-transform: uppercase;
 }
