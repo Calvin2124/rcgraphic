@@ -35,10 +35,6 @@
     margin: auto;
 }
 
-body{
-    background-color: var(--checkbox);
-}
-
 :root{
     --pItalic : 'Proxima-italic';
     --pSemibold : 'Proxima-semibold';
@@ -134,6 +130,7 @@ footer p, footer a{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .needOne{
@@ -152,4 +149,236 @@ footer p, footer a{
 
 #divH1{
     padding-top: 47vh;
+}
+
+#divService{
+    margin-top: 25px;
+}
+
+.hrservice{
+    width: 160px;
+    border: 1px solid var(--orange);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.btnService{
+    padding: 7px 14px;
+    color: var(--white);
+    font-family: var(--pRegular);
+    font-size: 16px;
+    border: 2px solid transparent;
+    margin-left: 5px;
+    border-image: linear-gradient(to right, #fe6a00, #f31f5c 100%);
+    border-image-slice: 1;
+    transition: all 0.2s ease;
+}
+
+.btnService:hover{
+    background: linear-gradient(to right, #fe6a00, #f31f5c 100%);
+    transition: all 0.2s ease;
+}
+
+/* SECTION YOUR SERVICE */
+
+#service{
+    margin-bottom: 88px;
+}
+
+.rotateHr{
+    text-align: center;
+}
+
+.rotateHr hr{
+    width: 50px;
+    rotate: 90deg;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #fe6a00, #f31f5c 100%);
+    border-image-slice: 1;
+}
+
+.rotateHr p{
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: var(--pRegular);
+    color: var(--red);
+}
+
+#yourProject{
+    text-align: center;
+}
+
+#yourProject h2{
+    color: var(--black);
+    font-family: var(--pExtrabold);
+    font-size: 66px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+#yourProject p{
+    font-family: var(--lora);
+    color: var(--gray);
+    font-size: 115%;
+    margin-top: 54px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#divYourProject{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 816px;
+    margin-top: 108px;
+}
+
+.articleProject{
+    padding: 33px;
+    border: 1px solid var(--grayborder);
+    text-align: center;
+    height: 275px;
+}
+
+#article1{
+    position: absolute;
+}
+
+#article1::before{
+    content: url(/img/rea3d.png);
+    position: absolute;
+    padding: 0 20px 0 20px;
+    background-color: var(--white);
+    top: -65px;
+    right: -52px;
+}
+#article2{
+    position: absolute;
+}
+
+#article2::before{
+    content: url(/img/Graphisme.png);
+    position: absolute;
+    padding: 0 20px 0 20px;
+    background-color: var(--white);
+    top: -65px;
+    right: -52px;
+}
+
+.articleProject h3{
+    font-size: 26px;
+    font-family: var(--pBold);
+    text-transform: uppercase;
+}
+
+.firstUl, .secondUl{
+    margin: 15px 0 45px 0;
+    color: var(--gray);
+    font-size: 16px;
+    font-family: var(--pRegular);
+}
+
+ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
+    font-family: var(--pSemibold);
+}
+
+#divYourProject > article > a{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 76px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--black);
+    width: max-content;
+    padding: 5px;
+    font-size: 14px;
+    font-family: var(--pSemibold);
+}
+
+/* À PROPOS */
+
+#apropos{
+    background: url(/img/Background-rc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 740px;
+    height: 740px;
+}
+
+.divPropos{
+    text-align: center;
+}
+
+.divPropos > p{
+    color: var(--red);
+    font-family: var(--pRegular);
+    font-size: 15px;
+    padding: 50px 0 10px 0;
+}
+
+.divPropos h2{
+    color: var(--white);
+    font-size: 66px;
+    font-family: var(--pExtrabold);
+    margin-bottom: 54px;
+}
+
+.txt{
+    margin-bottom: 88px;
+}
+
+.txt p{
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: var(--lora);
+    line-height: 1.6;
+    margin: 16px 0;
+}
+
+.freelanceWork{
+    text-align: start;
+}
+
+#apropos > div > div.freelanceWork > p {
+    font-size: 15px;
+    background: linear-gradient(to right, #fe6a00, #f31f5c 100%);
+    -webkit-background-clip: text; /* Pour les navigateurs basés sur WebKit */
+    -moz-background-clip: text; /* Pour les anciennes versions de Firefox */
+    -ms-background-clip: text; /* Pour les anciennes versions de Internet Explorer */
+    background-clip: text; /* Propriété standard */
+    -webkit-text-fill-color: transparent; /* Nécessaire pour voir le dégradé à travers le texte sur WebKit */
+    color: transparent; /* Sécurité au cas où */
+    font-family: var(--pSemibold);
+    width: 305px;
+    margin: 0 0 20px;
+}
+
+.freelanceWork h3{
+    font-family: var(--pExtrabold);
+    font-size: 33px;
+    margin-bottom: 28px;
+    color: var(--white);
+}
+
+.hrFreelance{
+    display: inline-flex;
+}
+
+.hrFreelance hr{
+    border: 1px solid transparent;
+    display: inline-block;
+    border-image: linear-gradient(to right, #fe6a00, #f31f5c 100%);
+    border-image-slice: 1;
+    width: 78px;
+    margin-top: 10px;
+}
+
+.hrFreelance ul{
+    margin-left: 30px;
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--pRegular);
+    line-height: 27px;
 }
