@@ -483,3 +483,64 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.500) 100%);
     transition: all 0.2s;
 }
+
+/* BLOG */
+
+#blog{
+    margin-bottom: 40px;
+}
+
+#titleBlog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#blog h2{
+    font-size: 66px;
+    font-family: var(--pExtrabold);
+    text-transform: uppercase;
+}
+
+#titleBlog a{
+    font-size: 13px;
+    font-family: var(--pBold);
+    display: flex;
+    align-items: end;
+}
+
+.containerBlog{
+    display: flex;
+    gap: 40px;
+}
+
+.articleBlog{
+    position: relative;
+}
+
+.articleBlog img{
+    height: 100%;
+    width: 100%;
+}
+
+.txtBlog{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.txtBlog p {
+    color: var(--red);
+    font-size: 15px;
+    font-family: var(--pSemibold);
+}
+
+.txtBlog h3{
+    margin-top: 30px;
+    color: var(--white);
+    font-size: 27px;
+    font-family: var(--pBold);
+}
+
+/* CONTACT */
+
