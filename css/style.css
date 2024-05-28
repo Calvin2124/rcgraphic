@@ -54,6 +54,10 @@
     --lora : "Lora", serif;
 }
 
+body{
+    position: relative;
+}
+
 .container1440{
     max-width: 1440px;
     margin: auto;
@@ -86,17 +90,32 @@ ul{
 /* HEADER */
 
 header {
+    background: #000;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: end;
+}
+
+.burger{
+    display: none !important ;
+    color: var(--white);
+    font-size: 45px;
+}
+
+#test{
     position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 25%;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .logo{
     margin-top: 33px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul {
@@ -119,6 +138,11 @@ header nav ul a:hover{
 
 /* FOOTER */
 
+footer{
+    background-color: #202122;
+
+}
+
 footer p, footer a{
     text-align: center;
     color: var(--gray);
@@ -136,7 +160,6 @@ footer p, footer a{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     margin-bottom: 80px;
 }
 
@@ -178,12 +201,12 @@ footer p, footer a{
     margin-left: 5px;
     border-image: linear-gradient(to right, #fe6a00, #f31f5c 100%);
     border-image-slice: 1;
-    transition: all 0.2s ease;
+    transition: all 0.2 ease;
 }
 
 .btnService:hover{
     background: linear-gradient(to right, #fe6a00, #f31f5c 100%);
-    transition: all 0.2s ease;
+    transition: all 0.2 ease;
 }
 
 /* SECTION YOUR SERVICE */
@@ -572,7 +595,7 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    max-width: 620px;
+    max-width: 635px;
     margin: 15px auto;
     letter-spacing: 0.5px;
     line-height: 1.6;
@@ -601,6 +624,7 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
 .numMail{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 #contact > div > div > div:nth-child(2) > img{
@@ -619,13 +643,21 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     color: transparent; /* Sécurité au cas où */
     font-family: var(--pExtrabold);
     width: 305px;
-    margin: 20px 0;
+    margin: 20px 0 40px ;
+}
+
+/* FORM */
+
+form{
+    display: flex;
+    flex-direction: column;
 }
 
 .displayForm{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-bottom: 60px;
 }
 
 .displayForm textarea{
@@ -638,4 +670,42 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     border-bottom: 2px solid var(--borderForm);
     background-color: #202122;
     resize: none;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+#rgpd{
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#rgpd p{
+    color: var(--checkbox);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+form button{
+    margin: auto;
+    padding: 10px 20px;
+    background: var(--btnForm);
+    color: var(--white);
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:768px){
+    .burger{
+        display: block !important;
+    }
+    header nav{
+        display: none;
+    }
 }

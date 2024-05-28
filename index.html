@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2bb90c57b5.js"></script>
     <title>Accueil - RC Graphics : RC Graphics</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="/"><img src="img/logo.png" alt="logo du site"></a>
+        <i class="fa-solid burger fa-bars"></i>
+        <div id="test">
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="logo du site"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section id="accroche">
@@ -229,10 +233,10 @@
                 <h3>Envoyer un message</h3>
                 <form action="#">
                     <div class="displayForm">
-                        <input type="text" name="userName" id="userName">
-                        <input type="email" name="userEmail" id="userEmail">
-                        <input type="text" name="userPhone" id="userPhone">
-                        <textarea name="userComment" id="userComment" cols="30" rows="10"></textarea>
+                        <input type="text" name="userName" id="userName" placeholder="Votre nom" required>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="Votre mail" required>
+                        <input type="text" name="userPhone" id="userPhone" placeholder="Votre téléphone" required>
+                        <textarea name="userComment" id="userComment" cols="0" rows="6" placeholder="Votre message"></textarea>
                     </div>
                     <div id="rgpd">
                         <input type="checkbox" name="checkbox" id="checkbox">
@@ -244,7 +248,7 @@
             </div>
         </section>
     </main>
-    <footer class="container1170">
+    <footer>
         <p>
             © rcgraphics - 2018 | Création de site internet : <a href="https://storycom.fr/">StoryCom</a> | <a href="/mentions-legales/">Mentions légales</a>
         </p>
