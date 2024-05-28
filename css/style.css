@@ -394,6 +394,10 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     line-height: 27px;
 }
 
+#portfolio{
+    margin-bottom: 50px;
+}
+
 .portfoliohr{
     display: flex;
     margin-bottom: 30px;
@@ -434,4 +438,48 @@ ul.firstUl > li:nth-child(1), .secondUl > li:nth-child(1){
     color: #1E1E1E;
     font-family: var(--pBold);
     text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#menuPortfolio a{
+    font-family: var(--pBold);
+    font-size: 13px;
+}
+
+.articlePortfolio{
+    position: relative;
+}
+
+.articlePortfolio img{
+    height: 100%;
+    width: 100%;
+}
+
+.articlePortfolio h3{
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    color: var(--white);
+    font-size: 27px;
+    font-family: var(--pBold);
+}
+
+#containerArticle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.shadowArticle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.73) 100%);
+    top: 0;
+    transition: all 0.2s;
+}
+
+.shadowArticle:hover{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.500) 100%);
+    transition: all 0.2s;
 }
